@@ -613,10 +613,11 @@ header{
 
 .features-container {
   display: flex;
-  flex-wrap: nowrap; /* Prevents wrapping to the next row */
-  gap: 20px; /* Adds space between cards */
-  justify-content: center; /* Centers cards in the row */
-  align-items: stretch; /* Ensures uniform height */
+  flex-wrap: nowrap; /* Keeps all cards in a single row */
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+  padding: 20px;
 }
 
 .feature-box {
@@ -628,14 +629,21 @@ header{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   background: rgba(255, 255, 255, 0.3); /* White with 50% opacity */
   text-align: center;
-  backdrop-filter: blur(8px); /* Adds a slight blur effect */
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
+
+/* Smooth hover effect on feature boxes */
+/* .feature-box:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+  background: rgba(255, 255, 255, 0.4);
+} */
 
 .blue-box {
   background-color: #0c2e8a;
   color: white;
 }
-
 
 /* Responsive fix */
 @media (max-width: 1000px) {
@@ -646,16 +654,50 @@ header{
 }
 
 .learn-more-btn {
-  background: white;
+  background: rgba(255, 255, 255, 0.3);
   color: #0c2e8a;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
+  border: 2px solid #0c2e8a;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
   font-weight: bold;
-  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease, border 0.3s ease;
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+}
+
+/* Button Hover Effect */
+.learn-more-btn:hover {
+  background: rgba(255, 255, 255, 0.6);
+  color: #0a2472;
+  border: 2px solid #0a2472;
+  transform: scale(1.05);
+}
+
+/* Button Click Effect */
+.learn-more-btn:active {
+  transform: scale(0.95);
 }
 
 .icon {
   font-size: 30px;
   color: #0c2e8a;
+}
+
+/* Extra Content Box */
+.extra-content {
+  background: rgba(255, 255, 255, 0.4);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+  backdrop-filter: blur(5px);
+}
+
+/* Smooth hover effect on extra content */
+.extra-content:hover {
+  background: rgba(255, 255, 255, 0.6);
+  transform: scale(1.02);
 }
