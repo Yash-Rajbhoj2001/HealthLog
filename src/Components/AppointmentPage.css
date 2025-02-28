@@ -1,0 +1,110 @@
+    .appointment-page {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Form Styles */
+  .appointment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #03045e; /* Darker shade for labels */
+  }
+  
+  input,
+  select {
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+  }
+  
+  input:focus,
+  select:focus {
+    outline: none;
+    border-color: #03045e;
+    box-shadow: 0 0 5px rgba(0, 119, 182, 0.5);
+  }
+  
+  .submit-button {
+    background-color: #03045e; /* Darker shade for button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  .submit-button:hover {
+    background-color: #03045e; /* Darker shade on hover */
+  }
+  
+  /* Confirmation Message */
+  .confirmation-message {
+    background-color: #caf0f8; /* Primary color */
+    padding: 20px;
+    border-radius: 10px;
+    color: #0077b6;
+  }
+  
+  .confirmation-message h2 {
+    margin-bottom: 10px;
+  }
+  
+  .confirmation-message button {
+    background-color: #03045e;
+    color: white;
+    padding: 10px 20px;
+    height: auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .confirmation-message button:hover {
+    background-color: #03045e;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .appointment-page {
+      margin: 20px;
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    input,
+    select {
+      font-size: 14px;
+    }
+  
+    .submit-button {
+      font-size: 14px;
+    }
+  }
