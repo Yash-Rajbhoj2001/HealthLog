@@ -620,20 +620,22 @@ header{
 }
 
 .feature-box {
-  flex: 1; /* Ensures equal width for all cards */
-  min-width: 250px; /* Prevents too small cards */
-  max-width: 300px; /* Prevents stretching too much */
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.3); /* White with 50% opacity */
   text-align: center;
+  backdrop-filter: blur(8px); /* Adds a slight blur effect */
 }
 
 .blue-box {
   background-color: #0c2e8a;
   color: white;
 }
+
 
 /* Responsive fix */
 @media (max-width: 1000px) {
