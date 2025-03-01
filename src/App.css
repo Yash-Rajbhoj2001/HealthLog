@@ -599,11 +599,10 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('./assets/home-bg.jpg');
+  background-image: url('./Assets/home-bg.jpg');
   background-size: cover;
   height: 100vh;
   text-align: center;
-  padding: 40px;
 }
 
 .hero-information-div {
@@ -614,7 +613,7 @@ header{
 .features-container {
   display: flex;
   flex-wrap: nowrap; /* Prevents wrapping to the next row */
-  gap: 20px; /* Adds space between cards */
+  gap: 10px; /* Adds space between cards */
   justify-content: center; /* Centers cards in the row */
   align-items: stretch; /* Ensures uniform height */
 }
@@ -623,7 +622,7 @@ header{
   flex: 1; /* Ensures equal width for all cards */
   min-width: 250px; /* Prevents too small cards */
   max-width: 300px; /* Prevents stretching too much */
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background: #fff;
