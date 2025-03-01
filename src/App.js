@@ -5,6 +5,7 @@ import Account from './Components/Account';
 import DoctorHome from './Components/DoctorHome';
 import PatientHome from './Components/PatientHome';
 import AppointmentPage from './Components/AppointmentPage';
+import SearchDoctorPage from './Components/SearchDoctorPage';
 import Home from './Components/Home';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <Route path='/DoctorPanel' element={<DoctorHome/>}></Route>
       <Route path='/PatientPanel' element={<PatientHome/>}></Route>
       <Route path='/bookappointment' element={<AppointmentPage/>}></Route>
+      <Route path='/SearchDoctorPage' element={<SearchDoctorPage/>}></Route>
     </Routes>
   </>
   );

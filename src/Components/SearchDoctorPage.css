@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light background */
+    color: #333;
+  }
+  
+  .search-doctor-page {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    color: #0077b6; /* Darker shade for heading */
+    margin-bottom: 20px;
+  }
+  
+  /* Search Form Styles */
+  .search-form {
+    margin-bottom: 30px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #0077b6; /* Darker shade for labels */
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #0077b6;
+    box-shadow: 0 0 5px rgba(0, 119, 182, 0.5);
+  }
+  
+  .search-button {
+    background-color: #0077b6; /* Darker shade for button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #023e8a; /* Darker shade on hover */
+  }
+  
+  /* Doctors List Styles */
+  .doctors-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .doctor-card {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .doctor-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .doctor-details {
+    text-align: left;
+  }
+  
+  .doctor-details h2 {
+    margin: 0;
+    color: #0077b6;
+  }
+  
+  .doctor-details p {
+    margin: 5px 0;
+  }
+  
+  .book-button {
+    background-color: #0077b6;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+  }
+  
+  .book-button:hover {
+    background-color: #023e8a;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .search-doctor-page {
+      margin-top: 20px;
+      padding: 15px;
+    }
+  
+    .doctor-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .doctor-image {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
